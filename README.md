@@ -15,6 +15,11 @@ send_message('The work is done.')
 Supports socks5 proxies.
 
 
+## Installation
+
+    $ pip install telega-notify
+
+
 ## Configuration
 
 Reads config options from `~/.config/telega-notify.toml` and `/etc/telega-notify.toml`.  Example config:
