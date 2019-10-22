@@ -24,3 +24,9 @@ token = '123456789:AAG................................'
 chat_id = '-123456789'
 proxy = 'socks5://proxy:huyoksy@127.0.0.1:8010'
 ```
+
+## TODO
+
+- Support for http proxies.
+- Specify alternative chat_id from CLI and `send_message` arguments.
+- Attach files.
