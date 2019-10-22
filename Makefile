@@ -7,6 +7,9 @@ dist:
 	rm -rf telega_notify.egg-info build
 	ls -ldh dist/telega_notify-*
 
+install:
+	pip install dist/telega_notify-*.whl
+
 release: release-pypi
 
 release-pypi: dist
