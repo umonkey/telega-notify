@@ -80,10 +80,15 @@ def send_message(message):
         return False
 
 
-def main(prog, message=None, *args):
-    if message is None:
+def main():
+    if len(sys.argv) == 1:
         print('Reading message from stdin...', file=sys.stderr)
         message = sys.stdin.read()
+    elif len(sys.argv) == 2:
+        message = sys.argv[1]
+    else:
+        print('Usage: telega "message text"', file=sys.stderr)
+        exit(7)
 
     message = message.strip()
     if send_message(message):
